@@ -1,11 +1,10 @@
-let numeroSecreto = parseInt(Math.random() * numMaximo + 1);
+let numeroSecreto = parseInt(Math.random() * 100 + 1);
 let chute ;
 let tentativas = 1;
-let numMaximo = 5000;
 
 // LOOP WHILE CHUTE != DO NUMERO S
 while (chute != numeroSecreto){ 
-    chute = prompt(`Escolha um número entre 1 a ${numMaximo}`);
+    chute = prompt('Escolha um número entre 1 a 100: ');
     // NUMERO SECRETO CORRETO
     if (chute == numeroSecreto) {
         break;
